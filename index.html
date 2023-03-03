@@ -12,7 +12,7 @@
 </head>
 
 <!-- ************************* PAGINA ***************************************** --> 
-<body onload='mostrarVehiculo(); crearSelector();'> <!-- Funciones llamadas despues de cargar la pagina --> 
+<body onload='mostrarVehiculo();'> <!-- Funciones llamadas despues de cargar la pagina --> 
     <div>
         <h1 class="titulo">CAR DEALERSHIP</h1>
         <div>           
@@ -21,12 +21,12 @@
                 Placa: <input type="text" name="placa" id="mi_placa"><br><br>
                 Tipo de vehículo:<input type="text" name="tipo" id="mi_tipo"><br><br>
                 Marca:<input type="text" name="marca" id="mi_marca"><br><br>
-                Modelo:<input type="number" name="modelo" id="mi_modelo"><br><br>
-                Versión del modelo:<input type="text" name="version" id="mi_version"><br><br>
-                Número de Serie:<input type="text" name="nserie" id="mi_nserie"><br><br>  
+                Modelo:<input type="text" name="modelo" id="mi_modelo"><br><br>
+                Versión del modelo:<input type="number" name="version" id="mi_version"><br><br>
+                Número de Serie:<input type="number" name="nserie" id="mi_nserie"><br><br>  
                 <!--El boton es submit para que se haga la validacion de los campos del lado del cliente-->
                 <div class="containerbutton">
-                    <input type="submit" class="button" name="boton" value="Insertar" onclick="insertarUsuario()" > 
+                    <input type="submit" class="button" name="boton" value="Insertar" onclick="insertarVehiculo()" > 
                     <input type="button" class="button" name="botonConsulta" value="Consulta" onclick="location.href='consulta.html'" >      
                 </div>
             </form>

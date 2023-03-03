@@ -19,7 +19,7 @@ if (!$con) {
 die('No se pudo conectar: ' . mysqli_error($con)); 
 }
 mysqli_select_db($con,'car_data');
-$sql="SELECT * FROM carList"; 
+$sql = "SELECT * FROM carlist WHERE placa =  ";
 $result = mysqli_query($con,$sql); 
 echo "<table>
 <tr>
@@ -38,7 +38,7 @@ echo "<td>" . $ren['tipoDeVehiculo'] . "</td>";
 echo "<td>" . $ren['marca'] . "</td>";
 echo "<td>" . $ren['modelo'] . "</td>";
 echo "<td>" . $ren['versionDeModelo'] . "</td>";
-echo "<td>" . $ren['numeroDeSerie'] . "</td>";
+echo '<td>' . $ren['numeroDeSerie'] . "</td>";
 echo "<td>";
 echo " <form method='Post'>";
  echo " <input type='image' src='img/borrar.jpg' value='Borra Todo' 
