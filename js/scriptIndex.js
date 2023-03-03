@@ -36,6 +36,13 @@
             },);
             
         }
+        function mostrarVehiculoSerie(valor) {
+            $.get('mostrar_vehiculoSerie.php',
+            function(respuesta){
+                $("#txtHint").html(respuesta);
+            },);
+            
+        }
         /******************************************************************
          *          Funcion que borra todo el contenido de la BD          *
          ******************************************************************/

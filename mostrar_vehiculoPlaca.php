@@ -18,8 +18,9 @@ $con = mysqli_connect('localhost','Lozi','1234');
 if (!$con) {
 die('No se pudo conectar: ' . mysqli_error($con)); 
 }
+$buscarPlaca = $_POST['buscarPlaca'];
 mysqli_select_db($con,'car_data');
-$sql = "SELECT * FROM carlist WHERE placa =  ";
+$sql = "SELECT * FROM carlist WHERE placa = '".$buscarPlaca."'  ";
 $result = mysqli_query($con,$sql); 
 echo "<table>
 <tr>

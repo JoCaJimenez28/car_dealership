@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Consultar Vehiculo</title>
 </head>
-<body onload="mostrarVehiculoPlaca()">
+<body onload="mostrarVehiculo()">
     <div>
         <form class="containerConsulta">
             Buscar por placa: <input type="text" name="buscarPlaca" id="mi_buscarPlaca"> 
             Buscar por No. Serie <input type="text" name="buscarSerie" id="mi_buscarSerie">
             <div>
                 <input type="submit" class="button" value="Buscar por placa" onclick="mostrarVehiculoPlaca()">
-                <input type="submit" class="button" value="Buscar por no. serie" onclick="borrarVehiculo2()">
+                <input type="submit" class="button" value="Buscar por no. serie" onclick="mostrarVehiculoSerie()">
                 <input type="button" class="button" name="botonRegresar" value="Regresar" onclick="location.href='index.html'" >
             </div>            
         </form>
