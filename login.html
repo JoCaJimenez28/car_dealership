@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <div>
+            <img src="https://icons.veryicon.com/png/o/miscellaneous/two-color-webpage-small-icon/user-244.png" class="image" alt="">
+        </div>
+        <form class="formLogin" action="php" method="POST">           
+            Usuario <input class="entradas" type="text" name="user" id="mi_user"><br><br>
+            Contraseña:<input class="entradas" type="password" name="pws" id="mi_pws"><br><br>
+            <a href="mailPassword.html" class="link">Olvidé mi contraseña</a>
+            <div class="centrar">
+                <h1 id="txtHint" class="result"></h1>
+                <input type="button" class="boton" name="btnLogin" value="Log in" onclick="consultarUsuario()">
+                <input type="button" class="boton" name="btnSignin" value="Sign in" onclick="location.href='registro.html'">                
+            </div>
+            
+        </form>
+    </div>
+
+    <!-- Incluye libreria para jquery--> 
+	<script src="./JQuery-3.6.3/jquery-3.6.3.min.js" type="text/javascript"></script>
+
+    <!-- Incluye Mi libreria -->
+    <script type="text/javascript" src="js/scriptIndex.js"></script>
+</body>
+</html>
